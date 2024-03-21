@@ -1,0 +1,159 @@
+/* Réinitialisation des marges et des rembourrages par défaut */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Définition d'une couleur de fond et d'une police pour le corps */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centrer tout le texte */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Mise en forme de l'en-tête */
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Mise en forme du h1 à l'intérieur de l'en-tête */
+header h1 {
+    font-size: 40px;
+    letter-spacing: 15px; /* Espace de 15px entre les lettres */
+    font-family: 'Times New Roman', Times, serif; /* Utilisation d'une police différente */
+}
+
+/* Mise en forme de l'image de profil */
+.profile-picture {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mise en forme du contenu */
+.content {
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Mise en forme de la partie "ABOUT ME" */
+.about-me {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrage du texte */
+}
+
+/* Mise en forme de la partie "HOBBIES & PROJECTS" */
+.hobbies-projects {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrage du texte */
+}
+
+/* Mise en forme des titres de section */
+.about-me h2,
+.hobbies-projects h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Arial Black', sans-serif; /* Utilisation d'une police différente */
+}
+
+/* Mise en forme des paragraphes à l'intérieur des sections */
+.about-me p,
+.hobbies-projects p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Mise en forme du pied de page */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Mise en forme des titres de pied de page */
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Mise en forme des liens de pied de page */
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Mise en forme des icônes de lien de pied de page */
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Mise en forme des icônes de lien de pied de page */
+footer ul li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Mise en forme du lien "Discover Le Wagon" dans la section "HOBBIES & PROJECTS" */
+.hobbies-projects a {
+    text-decoration: none; /* Suppression du soulignement */
+    transition: color 0.3s; /* Animation de transition de couleur */
+}
+
+/* Changement de couleur au survol du lien "Discover Le Wagon" */
+.hobbies-projects a:hover {
+    color: #7fb1bf; /* Couleur bleue plus claire au survol */
+}
+
+/* Media queries pour les appareils mobiles */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .profile-picture img {
+        width: 80%;
+        height: auto;
+    }
+    .about-me,
+    .hobbies-projects {
+        padding: 10px;
+    }
+}
+
+/* Media queries pour les tablettes */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* Media queries pour les PC */
+@media only screen and (min-width: 1025px) {
+    .container {
+        margin: 0 auto;
+    }
+}
+
